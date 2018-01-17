@@ -1,0 +1,5 @@
+version: '{build}'
+image: Visual Studio 2017
+build_script: build_packages.bat
+artifacts:
+  - path: '**\*.nupkg'

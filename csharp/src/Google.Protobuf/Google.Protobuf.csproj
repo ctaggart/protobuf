@@ -30,4 +30,8 @@
     <TargetFrameworks>netstandard1.0</TargetFrameworks>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="SourceLink.Create.CommandLine" Version="2.7.5" PrivateAssets="All" /> 
+  </ItemGroup>
+
 </Project>
