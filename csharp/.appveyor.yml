@@ -1,7 +1,7 @@
 version: '{build}'
 image: Visual Studio 2017
-environment:
-  VersionSuffix: pdb
-build_script: cd csharp && build_packages.bat
+build_script:
+  - ps: $env:VersionSuffix = 'pdb' + [int]::Parse($env:appveyor_build_number).ToString('000')
+  - cd csharp && build_packages.bat
 artifacts:
   - path: '**\*.nupkg'
