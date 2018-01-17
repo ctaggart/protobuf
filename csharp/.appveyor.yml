@@ -1,7 +1,7 @@
 version: '{build}'
 image: Visual Studio 2017
 build_script:
-  - ps: $env:VersionSuffix = 'pdb' + [int]::Parse($env:appveyor_build_number).ToString('000')
+  - ps: $env:VersionSuffix = 'unity' + [int]::Parse($env:appveyor_build_number).ToString('000')
   - cd csharp && build_packages.bat
 test_script:
   - dotnet run -p .\csharp\src\Google.Protobuf.Test\Google.Protobuf.Test.csproj -f netcoreapp1.0
