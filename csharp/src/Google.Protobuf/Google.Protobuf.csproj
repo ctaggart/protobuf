@@ -17,8 +17,6 @@
     <PackageLicenseUrl>https://github.com/google/protobuf/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/google/protobuf.git</RepositoryUrl>
-    <IncludeSymbols>true</IncludeSymbols>
-    <IncludeSource>true</IncludeSource>
   </PropertyGroup>
 
   <!-- 
