@@ -1,5 +1,7 @@
 version: '{build}'
 image: Visual Studio 2017
+environment:
+  VersionSuffix: pdb
 build_script: cd csharp && build_packages.bat
 artifacts:
   - path: '**\*.nupkg'
