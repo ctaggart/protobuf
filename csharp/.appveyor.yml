@@ -1,5 +1,5 @@
 version: '{build}'
 image: Visual Studio 2017
-build_script: csharp\build_packages.bat
+build_script: cd csharp && build_packages.bat
 artifacts:
   - path: '**\*.nupkg'
